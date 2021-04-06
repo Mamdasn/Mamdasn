@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Mamdasn
-- 👀 I’m interested in making useful tools to be more productive when using computers, and generally I enjoy reading philosophy, neuroscience and linguistics books.
+- 👀 I'm interested in philosophy, neuroscience and linguistics.
 - 🌱 I’m currently learning and gaining insight into neuroscience.
 - 📫 reach me at mamdassn@gmail.com
 
