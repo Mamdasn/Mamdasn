@@ -1,6 +1,7 @@
 - 👋 Hi, I’m @Mamdasn
 - 👨‍💻 I have a bachelor's degree in electrical engineering.
-- 👀 I'm interested in ee, philosophy, neuroscience and linguistics.
+<!-- - 👀 I'm interested in ee, philosophy, neuroscience and linguistics. -->
+- 👀 Currently, I'm studying computational sciences.
 - 📫 reach me at mamdassn@gmail.com
 <!-- - 🌱 I’m currently learning and gaining insight into neuroscience. -->
 
