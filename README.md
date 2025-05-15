@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Mamdasn
 - 👨‍💻 I have a bachelor's degree in electrical engineering.
-- 👀 I'm studying computer science for now.
+- 👀 I'm studying Computational Sciences for now.
 - 🌐 Find my blog at [farhadsplatz.de](https://farhadsplatz.de)
 - 📫 Reach me at reach.s.farhad@gmail.com
 <!-- - 🌱 I’m currently learning and gaining insight into neuroscience. -->
