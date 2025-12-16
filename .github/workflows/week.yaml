@@ -14,8 +14,8 @@ jobs:
 
       - name: Concatenate week number to README.md
         run: |
-          week=$(printf "<div style='font-weight:bold; text-align: right;'> WEEK %s </div>\n" "$(date +%W)")
-          line=$(grep "<div style='font-weight:bold; text-align: right;'> WEEK [0-9]* </div>" README.md | wc -l)
+          week=$(printf "## WEEK %s\n" "$(date +%W)")
+          line=$(grep "## WEEK [0-9]*" README.md | wc -l)
           [ $line -gt 0 ] &&
               tail +$((1+line)) README.md | tee README.md > /dev/null
           sed -i "1s|^|$week\n|" README.md
@@ -28,7 +28,7 @@ jobs:
           if git diff --cached --quiet; then
               echo "No changes to commit. Skipping git push."
           else
-              week=$(printf "<div style='font-weight:bold; text-align: right;'> WEEK %s </div>\n" "$(date +%W)")
+              week=$(date +%W)
               git commit -m "Update Week $week"
               git push origin main
           fi

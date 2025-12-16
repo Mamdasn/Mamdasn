@@ -1,5 +1,3 @@
-<div style='font-weight:bold; text-align: right;'> WEEK 50 </div>
-
 - 👋 Hi, I’m @Mamdasn
 - 👨‍💻 I have a bachelor's degree in electrical engineering.
 - 👀 I'm studying Computational Sciences for now.
