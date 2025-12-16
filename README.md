@@ -1,3 +1,4 @@
+## WEEK 50
 - 👋 Hi, I’m @Mamdasn
 - 👨‍💻 I have a bachelor's degree in electrical engineering.
 - 👀 I'm studying Computational Sciences for now.
