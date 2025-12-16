@@ -1,0 +1,34 @@
+name: Set week number of the year in Bio
+
+on:
+  schedule:
+    - cron: "0 0 * * 1"
+  workflow_dispatch:
+
+jobs:
+  update-weekly:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Concatenate week number to README.md
+        run: |
+          week=$(printf "<div style='font-weight:bold; text-align: right;'> WEEK %s </div>\n" "$(date +%W)")
+          line=$(grep "<div style='font-weight:bold; text-align: right;'> WEEK [0-9]* </div>" README.md | wc -l)
+          [ $line -gt 0 ] &&
+              tail +$((1+line)) README.md | tee README.md > /dev/null
+          sed -i "1s|^|$week\n|" README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          if git diff --cached --quiet; then
+              echo "No changes to commit. Skipping git push."
+          else
+              week=$(printf "<div style='font-weight:bold; text-align: right;'> WEEK %s </div>\n" "$(date +%W)")
+              git commit -m "Update Week $week"
+              git push origin main
+          fi
