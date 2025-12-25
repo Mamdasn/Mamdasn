@@ -14,13 +14,13 @@ jobs:
 
       - name: Concatenate week number to README.md
         run: |
-          week=$(printf "## WEEK %s\n" "$(date +%W)")
+          week=$(printf "## WEEK %s\n" "$(date +%V)")
           readme=$(cat README.md)
-          while true; 
-          do 
-            echo "$readme" | head -1 | grep -q "## WEEK [0-9]*" || 
-                break; 
-            readme=$(echo "$readme"|tail +2); 
+          while true;
+          do
+            echo "$readme" | head -1 | grep -q "## WEEK [0-9]*" ||
+                break;
+            readme=$(echo "$readme"|tail +2);
           done;
           printf "%s\n%s\n" "$week" "$readme" | tee README.md
 

@@ -1,5 +1,5 @@
-## WEEK 50
-- 👋 Hi, I’m @Mamdasn
+## WEEK 51
+- 👋 Hi, I’m @Mamdasn based in Berlin
 - 👨‍💻 I have a bachelor's degree in electrical engineering.
 - 👀 I'm studying Computational Sciences for now.
 - 🌐 Find my blog at [farhadsplatz.de](https://farhadsplatz.de)
