@@ -15,10 +15,14 @@ jobs:
       - name: Concatenate week number to README.md
         run: |
           week=$(printf "## WEEK %s\n" "$(date +%W)")
-          line=$(grep "## WEEK [0-9]*" README.md | wc -l)
-          [ $line -gt 0 ] &&
-              tail +$((1+line)) README.md | tee README.md > /dev/null
-          sed -i "1s|^|$week\n|" README.md
+          readme=$(cat README.md)
+          while true; 
+          do 
+            echo "$readme" | head -1 | grep -q "## WEEK [0-9]*" || 
+                break; 
+            readme=$(echo "$readme"|tail +2); 
+          done;
+          printf "%s\n%s\n" "$week" "$readme" | tee README.md
 
       - name: Commit and Push Changes
         run: |
