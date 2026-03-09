@@ -32,7 +32,7 @@ jobs:
           if git diff --cached --quiet; then
               echo "No changes to commit. Skipping git push."
           else
-              week=$(date +%W)
+              week=$(date +%V)
               git commit -m "Update Week $week"
               git push origin main
           fi
