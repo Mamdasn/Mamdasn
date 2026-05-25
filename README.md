@@ -1,4 +1,4 @@
-## WEEK 21
+## WEEK 22
 - 👋 Hi, I’m @Mamdasn based in Berlin
 - 👨‍💻 I have a bachelor's degree in electrical engineering.
 - 👀 I'm studying Computational Sciences for now.
