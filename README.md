@@ -4,5 +4,6 @@
 - 👀 I have a master's degree in CS.
 - 📫 Reach me at reach.s.farhad@gmail.com
 - 🌐 Find my blog at [farhadlabs.com](https://farhadlabs.com)
+- 📍 Find Events in Berlin at [maps.farhadlabs.com](https://maps.farhadlabs.com)
 <!-- - 🌱 I’m currently learning and gaining insight into neuroscience. -->
 <!-- - 👀 I'm interested in ee, philosophy, neuroscience and linguistics. -->
