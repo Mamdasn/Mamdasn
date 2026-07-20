@@ -1,4 +1,4 @@
-## WEEK 29
+## WEEK 30
 - 👋 Hi, I’m @Mamdasn based in Berlin
 - 👨‍💻 I have a bachelor's degree in EE.
 - 👀 I have a master's degree in CS.
